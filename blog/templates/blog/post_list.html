@@ -1,0 +1,15 @@
+
+{% extends 'blog/base.html' %}
+
+    {% block content %}
+    <div class="Content">
+        {% for post in posts %}
+        <div class="Post">
+            <h3>{{ post.title }}</h3>
+            <a>{{ post.text }}</a><br><br>
+            <a id="published_list">veröffentlicht am: {{ post.published_date|date:'d.m.Y'}} um {{ post.published_date|date:'H:i'}} Uhr</a>
+            <a href="{% url 'post_detail' pk=post.pk %}" id="btn_edit_list" >Edit</a>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}

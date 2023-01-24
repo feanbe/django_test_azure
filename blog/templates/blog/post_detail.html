@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+    {% block content %}
+    <div class="Content">
+        <div class="Detail">
+            <a class="Detail_small">Titel:</a><br>
+            <input type="text" class="Detail_input" value="{{ post.title }}"><br>
+            <br>
+            <a class="Detail_small">Text:</a><br>
+            <textarea rows="4" class="Detail_input">{{ post.text }}</textarea><br>
+            <br>
+            <br>
+            <a class="Detail_middle">Veröffentlich: {{ post.published_date }}</a><br>
+            <a class="Detail_middle">Erstellt: {{ post.created_at }}</a>
+        </div>
+        <div class="Detail_bottom">
+            <a href="{% url 'post_list' %}" id="btn_detail_back">Zurück</a>
+        </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div class="header">
+        <h1 id="header_h1">Felix's eigener Blog</h1>
+    </div>
+
+    <div class="Menu">
+        <ul class="Menu_ul">
+            <li><a href="{% url 'post_list' %}">Home</a></li>
+            <li>Neuer Post</li>
+            <li><a href="{% url 'csv' %}">csv</li>
+        </ul>
+    </div>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div id="footer">
+        <a class="footer_a">&copy; Felix Anton 2023</a>
+    </div>
+
+</body>
+</html>
