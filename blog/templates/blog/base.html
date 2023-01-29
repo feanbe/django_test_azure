@@ -20,8 +20,8 @@
     <div class="Menu">
         <ul class="Menu_ul">
             <li><a href="{% url 'post_list' %}">Home</a></li>
-            <li>Neuer Post</li>
-            <li><a href="{% url 'csv' %}">csv</li>
+            <li><a href="{% url 'post_new' %}" class="post_new">{% include './icons/file-earmark-plus.svg' %}  Neuer Post</a></li>
+            <li><a href="{% url 'csv' %}">csv</a></li>
         </ul>
     </div>
 

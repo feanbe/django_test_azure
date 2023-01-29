@@ -111,10 +111,8 @@ a:hover {
     padding-bottom: 7px;
     padding-left: 7px;
     padding-right: 7px;
-    border-right-width: 2px;
     width: inherit;
-    font-size: 18px;
-    border-style: solid;
+    font-size: 20px;
 }
 
 .Detail_bottom {
@@ -127,6 +125,13 @@ a:hover {
     position: absolute;
     font-size: 20px;
     left: 50px;
+    top: 20px;
+}
+
+#btn_detail_edit {
+    position: absolute;
+    font-size: 20px;
+    left: 200px;
     top: 20px;
 }
 

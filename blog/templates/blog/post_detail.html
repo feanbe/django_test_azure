@@ -4,10 +4,10 @@
     <div class="Content">
         <div class="Detail">
             <a class="Detail_small">Titel:</a><br>
-            <input type="text" class="Detail_input" value="{{ post.title }}"><br>
+            <a class="Detail_input">{{ post.title }}</a><br>
             <br>
             <a class="Detail_small">Text:</a><br>
-            <textarea rows="4" class="Detail_input">{{ post.text }}</textarea><br>
+            <a class="Detail_input">{{ post.text }}</a><br>
             <br>
             <br>
             <a class="Detail_middle">Veröffentlich: {{ post.published_date }}</a><br>
@@ -15,6 +15,7 @@
         </div>
         <div class="Detail_bottom">
             <a href="{% url 'post_list' %}" id="btn_detail_back">Zurück</a>
+            <a href="{% url 'post_edit' pk=post.pk %}" id="btn_detail_edit">{% include './icons/pencil-square.svg' %} Bearbeiten</a>
         </div>
     </div>
     {% endblock %}
