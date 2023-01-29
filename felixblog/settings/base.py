@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'felixblog.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': os.environ['DB_NAME'],
-       'USER': os.environ['DB_USER'],
-       'PASSWORD': os.environ['DB_PASSWORD'],
-       'HOST': os.environ['DB_HOST'],
+       'NAME': os.environ['DBNAME'],
+       'USER': os.environ['DBUSER'],
+       'PASSWORD': os.environ['DBPASS'],
+       'HOST': os.environ['DBHOST'],
        'PORT': os.environ['DB_PORT'],
    }
 }

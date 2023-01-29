@@ -1,4 +1,5 @@
 asgiref
 Django
 psycopg2-binary
+python-dotenv
 sqlparse
