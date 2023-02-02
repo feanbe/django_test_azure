@@ -14,8 +14,8 @@
             <a class="Detail_middle">Erstellt: {{ post.created_at }}</a>
         </div>
         <div class="Detail_bottom">
-            <a href="{% url 'post_list' %}" id="btn_detail_back">Zurück</a>
-            <a href="{% url 'post_edit' pk=post.pk %}" id="btn_detail_edit">{% include './icons/pencil-square.svg' %} Bearbeiten</a>
+            <a href="{% url 'post_list' %}" id="btn_blue_1">Zurück</a>
+            <a href="{% url 'post_edit' pk=post.pk %}" id="btn_blue_1">{% include './icons/pencil-square.svg' %} Bearbeiten</a>
         </div>
     </div>
     {% endblock %}
